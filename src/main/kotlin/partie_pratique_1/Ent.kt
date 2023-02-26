@@ -3,25 +3,10 @@ import java.lang.Exception
 
 data class Ent(var francais:String,var anglais:String) {
     
-    var motAnglais:String
-        set(value) {
-            if (value.isEmptyOrBlank() == true || value.isEmptyOrBlank() == false){
-                 throw Exception("le mot Englais not invalide")
-            }
-            else{
-                field = value
-            }
-        }
-
-    var motFrancais:String
-        set(value) {
-            if (value.isEmptyOrBlank() == true || value.isEmptyOrBlank() == false){
-                throw Exception("le mot francais not invalide")
-            }
-            else{
-                field = value
-            }
-        }
+    init {
+        if (français.isEmpty() || français.isBlank()) throw Exception("le mot français peut pas etre empty ou blank")
+        if (anglais.isEmpty() || anglais.isBlank()) throw Exception("le mot anglais peut pas etre empty ou blank")
+    }
 
     override fun toString(): String {
         return "$francais : $anglais"
