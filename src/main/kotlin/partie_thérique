@@ -1,0 +1,13 @@
+Exercice 1:
+
+1-faux
+2-vrai
+3-faux
+4-faux
+5-faux
+6-faux
+
+Exercice 2:
+1-Les classes et les interfaces scellées représentent des hiérarchies de classes restreintes qui offrent plus de contrôle sur l'héritage.
+2- les classes imbriquées sont divisées en deux catégories : non statiques et statiques. Les classes imbriquées non statiques sont appelées classes internes . Les classes imbriquées déclarées staticsont appelées classes imbriquées statiques .
+3-val avec le mot clé lazy et que vous l’initialisez avant sa première utilisation, sa valeur ne peut plus changer
